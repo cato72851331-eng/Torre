@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Torre/Torre.vcxproj" Id="1240566e-37d0-4103-9700-ea70effd3bc1" />
+</Solution>
