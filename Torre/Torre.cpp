@@ -68,11 +68,9 @@ int main()
 
     cout << "POSICION INICIAL:" << endl;
     torre.Visualizar();
-
-    cout << "\nTABLERO:" << endl;
     torre.MostrarTablero();
 
-    cout << "\nMOVIENDO TORRE A (0,5):" << endl;
+    cout << "\nMOVIMIENTO HORIZONTAL:" << endl;
 
     if (torre.Mover(0, 5))
         cout << "Movimiento valido." << endl;
@@ -80,8 +78,36 @@ int main()
         cout << "Movimiento invalido." << endl;
 
     torre.Visualizar();
+    torre.MostrarTablero();
 
-    cout << "\nTABLERO:" << endl;
+    cout << "\nMOVIMIENTO VERTICAL:" << endl;
+
+    if (torre.Mover(6, 5))
+        cout << "Movimiento valido." << endl;
+    else
+        cout << "Movimiento invalido." << endl;
+
+    torre.Visualizar();
+    torre.MostrarTablero();
+
+    cout << "\nMOVIMIENTO DIAGONAL:" << endl;
+
+    if (torre.Mover(7, 7))
+        cout << "Movimiento valido." << endl;
+    else
+        cout << "Movimiento invalido." << endl;
+
+    torre.Visualizar();
+    torre.MostrarTablero();
+
+    cout << "\nMOVIMIENTO FUERA DEL TABLERO:" << endl;
+
+    if (torre.Mover(10, 5))
+        cout << "Movimiento valido." << endl;
+    else
+        cout << "Movimiento invalido." << endl;
+
+    torre.Visualizar();
     torre.MostrarTablero();
 
     return 0;
