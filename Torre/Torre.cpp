@@ -9,4 +9,12 @@ public:
 
 private:
     bool isBlack;
+
+public:
+    Torre()
+    {
+        fila = 0;
+        columna = 0;
+        isBlack = false;
+    }
 };
