@@ -17,4 +17,19 @@ public:
         columna = 0;
         isBlack = false;
     }
+
+    void Visualizar()
+    {
+        cout << "Fila: " << fila << endl;
+        cout << "Columna: " << columna << endl;
+    }
 };
+
+int main()
+{
+    Torre torre;
+
+    torre.Visualizar();
+
+    return 0;
+}
