@@ -59,7 +59,13 @@ public:
         }
     }
 
-    
+    void MostrarColor()
+    {
+        if (isBlack)
+            cout << "La Torre es negra." << endl;
+        else
+            cout << "La Torre es blanca." << endl;
+    }  
 };
 
 int main()
@@ -79,6 +85,7 @@ int main()
 
     torre.Visualizar();
     torre.MostrarTablero();
+    torre.MostrarColor();
 
     cout << "\nMOVIMIENTO VERTICAL:" << endl;
 
