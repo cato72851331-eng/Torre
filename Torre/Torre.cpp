@@ -32,7 +32,8 @@ public:
             return false;
         }
 
-        if (nuevaFila == fila || nuevaColumna == columna)
+        if ((nuevaFila == fila && nuevaColumna != columna) ||
+            (nuevaFila != fila && nuevaColumna == columna))
         {
             fila = nuevaFila;
             columna = nuevaColumna;
@@ -41,24 +42,7 @@ public:
 
         return false;
     }
+
+    
 };
 
-int main()
-{
-    Torre torre;
-
-    torre.Visualizar();
-
-    if (torre.Mover(0, 5))
-    {
-        cout << "Movimiento valido." << endl;
-    }
-    else
-    {
-        cout << "Movimiento invalido." << endl;
-    }
-
-    torre.Visualizar();
-
-    return 0;
-}
